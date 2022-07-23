@@ -2,39 +2,68 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Happy New Year</title>
-  <meta name="viewport" content="width=960">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel='stylesheet' href='https://peter.build/newyears/css/style.css'>
-<link rel='stylesheet' href='https://peter.build/newyears/css/flipclock.css'>
-<link rel='stylesheet' href='https://peter.build/newyears/css/animate.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Great+Vibes'><link rel="stylesheet" href="./style.css">
+  <title>CodePen - Countdown Timer</title>
+  
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="wrapper">
-			  <div class="clock animated flipInX"></div>
-		</div>
-		<canvas id="confetti"></canvas>
-		<div class="message">Happy New Year !!!</div>
-		<div class="stars"></div>
-		<div class="twinkling"></div>
-		<div class="clouds"></div>
+<!DOCTYPE HTML>
+<html>
+<head>
 
-<audio class="happy_mp3 hide" preload="none" id="happy_mp3">
-			  <source src="https://peter.build/newyears/audio/happy-new-year.m4a" type="audio/m4a">
-			  <source src="https://peter.build/newyears/audio/happy-new-year.ogg" type="audio/ogg" />
-		</audio>
+<link href='https://fonts.googleapis.com/css?family=Fontdiner Swanky' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
 
-		<audio class="countdown_mp3 hide" preload="none" id="countdown_mp3">
-			  <source src="https://peter.build/newyears/audio/countdown.m4a" type="audio/m4a">
-			  <source src="https://peter.build/newyears/audio/countdown.ogg" type="audio/ogg" />
-		</audio>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+p {
+	text-align: center;
+	font-size: 60px;
+	margin-top: 0px;
+}
+</style>
+</head>
+<body>
+
+  <p style="font-family: 'Fontdiner Swanky'"">Graduation Countdown</p>
+<p id="demo" style="font-family: 'Alef'"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("December 11, 2021 09:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
 <!-- partial -->
-  <script src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
-<script src='https://peter.build/newyears/js/flipclock.js'></script>
-<script src='https://peter.build/newyears/js/newyear.js?v1.01'></script><script  src="./script.js"></script>
-
+  
 </body>
 </html>
