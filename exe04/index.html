@@ -2,13 +2,34 @@
 <html>
     <head>
         <tittle>
-            Exe03
+            ANIMATION
         </tittle>
         <style>
+            @keyframes my-animation{
+                0% {left: 0px;}
+                20% {left: 100px;}
+                40% {left: 200px;}
+                60% {left: 300px;}
+                80% {left: 400px;}
+                100% {left: 500px;}
+            }
+
+            h1{
+                color: white;
+                height: 100px;
+                width: 150px;
+                text-align: center;
+                background-color: #1c412a;
+                transition-property: none;
+                transition-duration: 5s;
+                animation-name:my-animation;
+            }
 
         </style>
     </head>
     <body>
-
+        <h1>
+            HELLO ^^
+        </h1>
     </body>
 </html>
