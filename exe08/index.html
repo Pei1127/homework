@@ -9,8 +9,8 @@
         <p id="ex02"></p>
         <script>
             var num;
-            Num = Math.random();
-            document.getElementId("exe01").innerHTML = "Random number is"+ Num
+            num = Math.random();
+            document.getElementId("exe01").innerHTML = "Random number is"+ num
 
             if(num >0.5){
                 document.getElementId("exe01").innerHTML = "Big"
@@ -19,7 +19,27 @@
             else{
                 document.getElementId("exe01").innerHTML = "Small"
             }
+        </script>
+        <hr>
+        <p>Date</p>
+        <button onclick="date()">Click Me</button>
+        <p id="hour"></p>
+        <p id="info"></p>
+        <script>
+            function date()
+            var date = new Date().getHours();
+            document.getElementId("hour").innerHTML = "Hour"
+            if(Hour >= 9){
+                document.getElementId("info").innerHTML = "Good Morning!"
+            }
 
+            else if(Hour >= 4){
+                document.getElementId("info").innerHTML = "Good Afternoon!"
+            }
+
+            else{
+                document.getElementId("info").innerHTML = "Good Night!"
+            }
 
         </script>
     </body>
