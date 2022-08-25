@@ -66,7 +66,37 @@
             }
         </script>
         <hr>
-
-
+        
+        <button onclick="input()">WARNING</button>
+        <script>
+            function input(){
+                var input = window.prompt("plese enter &#10102 ~ &#10108");
+                switch(Number(numInput)){
+                    case 1:
+                        window.alert("Monday &#127793");
+                        break;
+                    case 2:
+                        window.alert("Tuesday &#127793");
+                        break;
+                    case 3:
+                        window.alert("Wednesday &#127793");
+                        break;
+                    case 4:
+                        window.alert("Thursday &#127793");
+                        break;
+                    case 5:
+                        window.alert("Friday &#127793");
+                        break;
+                    case 6:
+                        window.alert("Saturday &#127795");
+                        break;
+                    case 7:
+                        window.alert("Sunday &#127795");
+                        break;
+                    default:
+                        window.alert("No, no, no, you're wrong. Please follow the instructions.")
+                }
+            }
+        </script>
 </body>
 </html>
