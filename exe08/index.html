@@ -10,18 +10,18 @@
         <script>
             var num;
             num = Math.random();
-            document.getElementId("ex01").innerHTML = "Random number is"+ num;
+            document.getElementById("ex01").innerHTML = "Random number is"+ num;
 
             if(num > 0.5){
-                document.getElementId("ex02").innerHTML = "Big";
+                document.getElementById("ex02").innerHTML = "Big";
             }
 
             else{
-                document.getElementId("ex02").innerHTML = "Small";
+                document.getElementById("ex02").innerHTML = "Small";
             }
         </script>
         <hr>
-        
+
         <p>Date</p>
         <button onclick="date()">Click Me</button>
         <p id="hour"></p>
@@ -29,17 +29,17 @@
         <script>
             function date()
             var date = new Date().getHours();
-            document.getElementId("hour").innerHTML = "Hour";
+            document.getElementById("hour").innerHTML = "Hour";
             if(Hour <= 9){
-                document.getElementId("info").innerHTML = "Good Morning!";
+                document.getElementById("info").innerHTML = "Good Morning!";
             }
 
             else if(Hour <= 16){
-                document.getElementId("info").innerHTML = "Good Afternoon!";
+                document.getElementById("info").innerHTML = "Good Afternoon!";
             }
 
             else{
-                document.getElementId("info").innerHTML = "Good Night!";
+                document.getElementById("info").innerHTML = "Good Night!";
             }
 
         </script>
