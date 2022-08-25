@@ -13,11 +13,11 @@
             document.getElementById("ex01").innerHTML = "Random number is"+ num;
 
             if(num > 0.5){
-                document.getElementById("ex02").innerHTML = "Big";
+                document.getElementById("ex02").innerHTML = "Big &#10039";
             }
 
             else{
-                document.getElementById("ex02").innerHTML = "Small";
+                document.getElementById("ex02").innerHTML = "Small &#10040";
             }
         </script>
         <hr>
@@ -45,7 +45,7 @@
             }
         </script>
         <hr>
-        
+
         <p>DAY</p>
         <button onclick="day()">Click Me</button>
         <p id="dayinfo"></p>
@@ -54,16 +54,19 @@
                 var day = new Date().getDay();
                 switch(day){
                     case 0:
-                        document.getElementById("dayinfo").innerHTML = "Sunday";
+                        document.getElementById("dayinfo").innerHTML = "Sunday &#128564";
                         break;
                     case 6:
-                        document.getElementById("dayinfo").innerHTML = "Saturday";
+                        document.getElementById("dayinfo").innerHTML = "Saturday &#128522";
                         break;
                     default:
-                        document.getElementById("dayinfo").innerHTML = "Working Day :(";
+                        document.getElementById("dayinfo").innerHTML = "Working Day &#128565";
                         break;
                 }
             }
         </script>
+        <hr>
+
+
 </body>
 </html>
