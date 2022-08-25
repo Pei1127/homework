@@ -27,21 +27,23 @@
         <p id="hour"></p>
         <p id="info"></p>
         <script>
-            function date()
-            var date = new Date().getHours();
-            document.getElementById("hour").innerHTML = "Hour";
-            if(Hour <= 9){
-                document.getElementById("info").innerHTML = "Good Morning!";
-            }
+            function date(){
+                var date = new Date().getHours();
+                document.getElementById("hour").innerHTML = "Hour";
+                
+                if(Hour <= 9){
+                    document.getElementById("info").innerHTML = "Good Morning!";
+                }
 
-            else if(Hour <= 16){
-                document.getElementById("info").innerHTML = "Good Afternoon!";
-            }
+                else if(Hour <= 16){
+                    document.getElementById("info").innerHTML = "Good Afternoon!";
+                }
 
-            else{
-                document.getElementById("info").innerHTML = "Good Night!";
+                else{
+                    document.getElementById("info").innerHTML = "Good Night!";
+                }
             }
-
         </script>
-    </body>
+    
+</body>
 </html>
