@@ -10,14 +10,14 @@
         <script>
             var num;
             num = Math.random();
-            document.getElementId("exe01").innerHTML = "Random number is"+ num
+            document.getElementId("ex01").innerHTML = "Random number is"+ num
 
             if(num >0.5){
-                document.getElementId("exe01").innerHTML = "Big"
+                document.getElementId("ex02").innerHTML = "Big"
             }
 
             else{
-                document.getElementId("exe01").innerHTML = "Small"
+                document.getElementId("ex02").innerHTML = "Small"
             }
         </script>
         <hr>
@@ -29,11 +29,11 @@
             function date()
             var date = new Date().getHours();
             document.getElementId("hour").innerHTML = "Hour"
-            if(Hour >= 9){
+            if(Hour <= 9){
                 document.getElementId("info").innerHTML = "Good Morning!"
             }
 
-            else if(Hour >= 4){
+            else if(Hour <= 16){
                 document.getElementId("info").innerHTML = "Good Afternoon!"
             }
 
