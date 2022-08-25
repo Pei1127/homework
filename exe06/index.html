@@ -1,7 +1,77 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exe 06</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            .row::after {
+                clear:left;
+                display: table;
+            }
+
+            [class*-"col-"]{
+                float: left;
+                padding: 20px;
+                width: 100%;
+            }
+
+            @media only screen and( min-width:481px){
+                .col-s-25 {width: 25%;}
+                .col-s-75 {width: 75%;}
+                .col-s-100 {width: 100%;}
+            }
+
+            @media only screen and( min-width:769px){
+                .col-s-25 {width: 50%;}
+                .col-s-75 {width: 50%;}
+            }
+
+            html{
+                font-family: 'Times New Roman',serif;
+            }
+
+            header{
+                background-color: #101b37;
+                color: white;
+                padding: 15px;
+            }
+
+            .menu ul {
+                margin: 0;
+            }
+
+            .menu li {
+                background-color: #e41376;
+                color: black;
+                padding: 5px;
+                margin-bottom: 5px;
+                box-shadow: #9f0e52;
+            }
+
+            aside {
+                background-color: #01c8ee;
+                color: black;
+                padding: 15px;
+                text-align: center;
+                font-size: 15px;
+                box-shadow: #008099;
+            }
+            
+            footer {
+                background-color: #1e346c;
+                color: white;
+                text-align: center;
+                font-size: 18px;
+                padding: 15px;
+            }
+
+        </style>
     </head>
     <body>
         <header>
