@@ -4,7 +4,7 @@
 
     </head>
     <body>
-        <p>random number</p>
+        <p>RANDOM NUMBER &#10067</p>
         <p id="ex01"></p>
         <p id="ex02"></p>
         <script>
@@ -22,7 +22,7 @@
         </script>
         <hr>
 
-        <p>Date</p>
+        <p>DATE &#8987 </p>
         <button onclick="date()">Click Me</button>
         <p id="hour"></p>
         <p id="info"></p>
@@ -32,18 +32,37 @@
                 document.getElementById("hour").innerHTML = date;
                 
                 if(date <= 9){
-                    document.getElementById("info").innerHTML = "Good Morning!";
+                    document.getElementById("info").innerHTML = "Good Morning! &#9925";
                 }
 
                 else if(date <= 16){
-                    document.getElementById("info").innerHTML = "Good Afternoon!";
+                    document.getElementById("info").innerHTML = "Good Afternoon! &#127774";
                 }
 
                 else{
-                    document.getElementById("info").innerHTML = "Good Night!";
+                    document.getElementById("info").innerHTML = "Good Night! &#127769";
                 }
             }
         </script>
     
+        <p>DAY</p>
+        <button onclick="day()">Click Me</button>
+        <p id="dayinfo"></p>
+        <script>
+            function day(){
+                var day = new Date().getDay();
+                switch(day){
+                    case 0:
+                        document.getElementById("dayinfo").innerHTML = "Sunday";
+                        break;
+                    case 6:
+                        document.getElementById("dayinfo").innerHTML = "Saturday";
+                        break;
+                    default:
+                        document.getElementById("dayinfo").innerHTML = "Working Day :(";
+                        break;
+                }
+            }
+        </script>
 </body>
 </html>
