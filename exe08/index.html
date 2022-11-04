@@ -44,7 +44,23 @@
         </script>
         <hr>
 
-        
+        <p>Java script for loop using do...while...</p>
+        <p id="third"></p>
+
+        <script>
+            var strText03 ="";
+            var y = 1;
+            var sum03 = 0;
+
+            do{
+                sum03 += y;
+                strText03 += "Loop =" + y + ", sum =" + sum03 + "<br>";
+                y++
+            }while( y <= 5)
+            document.getElementById("third").innerHTML = strText03;
+
+        </script>
+        <hr>
 
     </body>
 </html>
