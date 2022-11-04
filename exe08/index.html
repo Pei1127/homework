@@ -101,9 +101,25 @@
         <hr>
 
 
-        <p></p>
+        <p>Array02</p>
+        <p id="msg02"></p>
+        <p id="msg002"></p>
+        
+        <script>
+            var numList02 = [1, 5, 7, 8, 3, 4, 9, 6, 2, 0];
+            var numSort02 = numList02.sort();
+            var arrayLength02 = numList02.length;
+            var numArray02 = "";
+            var z;
+            
+            for ( z=0; z < arrayLength02; z++ ){
+                numArray02 += "numSort [" + z + "] = " + numSort02[z] + "<br>";
+            }
 
-
+            document.getElementById("msg02").innerHTML = "Length of the Numlist = " + arrayLength02;
+            document.getElementById("msg002").innerHTML = numArray02;
+        </script>
+        <hr>
 
     </body>
 </html>
