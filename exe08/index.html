@@ -13,7 +13,7 @@
             var i;
             var sum = 0;
 
-            for ( i=1; i<=5; i++){
+            for ( i = 1; i <= 5; i++ ){
                 sum+=i;
                 strText += "Loop =" + i + ", sum =" + sum + "<br>"
             }
@@ -23,6 +23,24 @@
             // ( i=0 , y=i++ ) = ( i=0 , y=0+1 =1 ) //  
             // ( sum+=i ) means sum = sum+i //
         
+        </script>
+        <hr>
+
+        <p>Java script for loop using while</p>
+        <p id="second"></p>
+
+        <script>
+            var strText02 = "";
+            var x = 1;
+            var sum02 = 0;
+
+            while ( x <= 5 ){
+                sum02 += x;
+                strText02 += "Loop =" + x + ", sum =" + sum02 + "<br>";
+                x++;
+            }
+            document.getElementById("second").innerHTML = strText02;
+
         </script>
         <hr>
 
