@@ -62,5 +62,48 @@
         </script>
         <hr>
 
+        <p>Date().getHours show time info</p>
+        <button onclick="timeFunc()">Click</button>
+        <p id="numHour"></p>
+        <p id="timeInfo"></p>
+
+        <script>
+            function timeFunc(){
+                var timeHour = new Date().getHours();
+                var hourInfo;
+                
+                hourInfo= (timeHour > 11) ? "PM":"AM";
+                document.getElementById("numHour").innerHTML = "Hours = " + timeHour + " &#9200";
+                document.getElementById("timeInfo").innerHTML = "Now is " + hourInfo;
+            }
+        </script>
+        <hr>
+
+
+        <p>Array</p>
+        <p id="msg01"></p>
+        <p id="msg001"></p>
+        
+        <script>
+            var numList = [0, 4, 2, 8, 6];
+            var numSort = numList.sort();
+            var arrayLength = numList.length;
+            var numArray = "";
+            var i;
+            
+            for ( i=0; i < arrayLength; i++ ){
+                numArray += "numSort [" + i + "] = " + numSort[i] + "<br>";
+            }
+
+            document.getElementById("msg01").innerHTML = "Length of the Numlist = " + arrayLength;
+            document.getElementById("msg001").innerHTML = numArray;
+        </script>
+        <hr>
+
+
+        <p></p>
+
+
+
     </body>
 </html>
